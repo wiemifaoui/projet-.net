@@ -1,0 +1,28 @@
+﻿
+<h1>Traitement des factures</h1>
+<hr height:100vh;
+    width:.5vw;
+    border-width:0;
+    color:#000;
+    background-color:#000;>
+
+<strong>    Veuillez sélectionner les factures à traiter:      </strong>
+
+<form method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Index">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload one or more files using this form:</p>
+            <input type="file" name="files" multiple />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input class="favorite styled" style="float: right;"
+                   type="submit"
+                   value="Upload">
+
+        </div>
+    </div>
+
+  
+</form>
